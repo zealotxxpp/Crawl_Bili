@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>【STN的选题会13】 你知道大锤的冲锋有几种用法吗？_网络游戏_游戏_bilibili_哔哩哔哩</title>
+
+    
+<meta name="keywords" content="【STN的选题会13】 你知道大锤的冲锋有几种用法吗？,游戏,网络游戏,STN工作室,,哔哩哔哩,Bilibili,B站,弹幕" />
+<meta name="description" content="相关游戏: 大金刚 鬼泣 简介补充: 不知道罢，我来教你" />
+<meta name="author" content="STN工作室" />
+<meta name="spm_prefix" content="333.338">
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="//static.hdslb.com/images/favicon.ico">
+    <link rel="search" type="application/opensearchdescription+xml" href="//static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+
+    <link rel="stylesheet" href="//static.hdslb.com/images/jquery-ui/custom/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="//static.hdslb.com/css/core-v5/page-core.css" type="text/css" />
+
+    <script type="text/javascript" src="//static.hdslb.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="//static.hdslb.com/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//static.hdslb.com/js/core-v5/base.core.js"></script>
+    <script type="text/javascript" src="//s3.hdslb.com/bfs/cm/st/seed.js"></script>
+    
+<link rel="stylesheet" href="//static.hdslb.com/tag/css/tag-index2.0.css" type="text/css">
+<link rel="stylesheet" href="//static.hdslb.com/elec_2/dist/css/elec.css">
+<link rel="stylesheet" href="//static.hdslb.com/mstation/article_chart/chart.min.css">
+<link rel="stylesheet" type="text/css" href="//static.hdslb.com/phoenix/dist/css/comment.min.css">
+<style>
+  body{
+    line-height: normal !important;
+  }
+  .bili-header-m .profile-info .i-face .face{
+    vertical-align: middle !important;
+  }
+</style>
+<!-- add by liqian -->
+<!-- 视频详情页增加一个投诉入口,番剧详情页无需增加这个入口 -->
+<link rel="stylesheet" href="//static.hdslb.com/mstation/css/appeal/appeal.css" type="text/css">
+
+<!-- end -->
+
+<script type="text/javascript" src="//static.hdslb.com/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/swfobject.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/core-v5/page.arc.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/video.min.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/jquery.xdomainrequest.min.js"></script>
+<script type="text/javascript" src="//s1.hdslb.com/bfs/seed/jinkela/header/header.js"></script>
+
+
+</head>
+
+<body>
+
+<img src="//i1.hdslb.com/bfs/archive/64bf7436e7179ae053d8ad91a15e32d0972553ea.jpg" style="display:none;" class="cover_image"/>
+
+<script type="text/javascript">biliAdjust(); $(function(){ biliAdjust(true); $(window).resize(biliAdjust); });</script>
+<div class="z-top-container has-menu" style="height:229px;"></div>
+<div class="b-page-body">
+
+    
+    <script>
+        $('.header .num .m-i[data-tid=4]').addClass('on');
+        var topid = '4';
+    </script>
+<script type="text/javascript"> var token = "d41d8cd98f00b204e9800998ecf8427e"; </script>
+<div class="main-inner">
+    <div id="heimu"></div>
+    <div class="viewbox report-scroll-module report-wrap-module" id="viewbox_report">
+        <div class="info">
+        <div class="v-title"><h1 title="【STN的选题会13】 你知道大锤的冲锋有几种用法吗？">【STN的选题会13】 你知道大锤的冲锋有几种用法吗？</h1></div><div class="arcrank"></div>
+        <div class="tminfo" xmlns:v="//rdf.data-vocabulary.org/#"><a href="/" rel="v:url" property="v:title">主页</a> &gt; <span typeof="v:Breadcrumb"><a href='/video/game.html'  rel="v:url" property="v:title">游戏</a></span> &gt; <span typeof="v:Breadcrumb"><a href="/video/onlinegame-1.html" class="on" rel="v:url" property="v:title">网络游戏</a></span>
+                        <time itemprop="startDate" datetime="2018-01-17T02:23"><i>2018-01-17 02:23</i></time>
+                    </div>
+        <div class="v-title-info">
+            <div class="v-title-line" title="总播放数"><i class="b-icon b-icon-a b-icon-play"></i><span id="dianji"></span></div>
+            <div class="v-title-line" title="总弹幕数"><i class="b-icon b-icon-a b-icon-danmaku"></i><span id="dm_count"></span></div>
+            <div class="v-title-line v-rank" title="本日日排行数据过期后，再纳入本稿件的历史排行数据进行对比得出"><!-- 排行数据 --></div>
+            <div class="v-title-line v-coin coin_btn" title="投币个数"><i class="b-icon b-icon-a b-icon-coin"></i><span class="coin-status">硬币</span><span id="v_ctimes"></span></div>
+            <div class="v-title-line v-stow fav_btn" title="收藏人数"><i class="b-icon b-icon-a b-icon-stow"></i><span class="stow-status">收藏</span><span id="stow_count"></span></div>
+        </div>
+        
+        </div>
+
+                                                    <div class="upinfo">
+                    <div class="u-face" id="r-info-rank"><a href="//space.bilibili.com/7349" card="STN工作室" mid="7349" title="STN工作室" target="_blank"><img data-fn-size="68" data-fn-src="http://i1.hdslb.com/bfs/face/d8700b8127be51cec6b0e3270456edbcf40aad94.jpg" src="//static.hdslb.com/images/member/noface.gif" alt="STN工作室" /></a><div class="legalize-icon legalize-16-2" title="企业/团体认证"></div></div>
+                    <div class="r-info">
+                        <div class="usname"><a class="name" href="//space.bilibili.com/7349" mid="7349" card="STN工作室" title="STN工作室" target="_blank">STN工作室</a><a mid="7349" href="//message.bilibili.com/#whisper/mid7349" target="_blank" class="message">发消息</a>
+                        </div>
+                        <div class="sign">@演播室只有一个屎蛋 weibo.com/dawnfall；神秘链接：stnkb.taobao.com</div>
+                        <script type="text/javascript">
+                            if($('.sign').height() > 40) {
+                                $('.sign').addClass('static');
+                                var span_btn = $('<a class="b-btn b-btn-textonly">展开</a>').appendTo($('.sign')).on('click', function(){
+                                    if($('.sign').hasClass('static')) {
+                                        $('.sign').removeClass('static');
+                                        span_btn.html('收起');
+                                    } else {
+                                        $('.sign').addClass('static');
+                                        span_btn.html('展开');
+                                    }
+                                });
+                            }
+                        </script>
+                        <div class="up-video-message">
+                            <div class="archiveCount">投稿：0</div>
+                            <div>粉丝：--</div>
+                        </div>
+                        <div mid="7349" class="b-btn f hide">+ 关注</div>
+                        <div class="b-btn elec hide">充电</div>
+                        
+                    </div>
+                </div>
+                        
+                </div>
+        <div class="ad-f">
+        <div class="left ad-fl"></div>
+        <div class="right ad-fr"></div>
+    </div>
+    </div>
+
+<div class="player-wrapper">
+    <div class="main-inner">
+        <div class="v-plist">
+            <div id="plist"></div>
+        </div>
+    </div>
+    <div class="scontent" id="bofqi">
+    '<div id='player_placeholder' class='player'></div><script type='text/javascript'>EmbedPlayer('player', "//static.hdslb.com/play.swf", "cid=30016675&aid=18390083&pre_ad=");</script>
+    </div>
+    <div class="arc-toolbar report-scroll-module report-wrap-module" id="arc_toolbar_report">
+      <div class="share-tool-bar">
+            <div class="drawer">
+                <span class="title">分享</span><span class="num" title="分享次数"></span><span class="arrow"></span>
+                <div class="share-box" id="share_list" style="display: none;">
+                    <div class="share-left">
+                        <div class="share-time">
+                            <label><input name="has_start_time" type="checkbox">开始时间</label><input name="video_start_time" type="text" value="0:00">
+                        </div>
+                        <div class="share-head">
+                            将视频贴到博客或论坛
+                        </div>
+                        <ul class="share-address-list">
+                            <li class="share-address"><label>视频地址</label><input id="link0" name="video_address" readonly type="text" value=""><span class="address-copy">复制</span></li>
+                            <li class="share-address"><label>Flash地址</label><input id="link1" name="flash_address" readonly type="text" value=""><span class="address-copy">复制</span></li>
+                            <li class="share-address last"><label>Html地址</label><input id="link2" name="html_address" readonly type="text" value=""><span class="address-copy">复制</span></li>
+                        </ul>
+                    </div>
+                    <div class="share-right">
+                        <div class="share-head">
+                            微信扫一扫分享
+                        </div>
+                        <div class="share-btn" id="btn_weixin" title="扫一扫 分享到微信">
+                            <div class="share-weixin">
+                                <div class="qr-code" style="height: 110px;">
+                                    <canvas height="110" width="110"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="share-btn-bar">
+                <div class="g-share-btn dynmic-share" data-id="btn_dynmic" title="分享到动态"></div>
+                <div class="g-share-btn weibo" data-id="btn_weibo" title="分享到新浪微博"></div>
+                <div class="g-share-btn qzone" data-id="btn_qqzone" title="分享到QQ空间"></div>
+                <div class="g-share-btn qq" data-id="btn_qq" title="分享到QQ"></div>
+                <div class="g-share-btn tieba" data-id="btn_baidu" title="分享到百度贴吧"></div>
+            </div>
+        </div>
+
+
+        <div class="block fav">
+            <span class="t fav_btn" href="//www.bilibili.com/m/stow?aid=18390083">
+                <i class="b-icon b-icon-a b-icon-anim-fav"></i>
+                <div class="t-right">
+                    <span class="t-right-top">收藏</span>
+                    <span class="t-right-bottom stow_count"></span>
+                </div>
+            </span>
+        </div>
+        <div class="block coin" arctype="Original">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-coin"></i>
+                <div class="t-right">
+                    <span class="t-right-top">硬币</span>
+                    <span class="t-right-bottom v_ctimes">-</span>
+                </div>
+            </span>
+        </div>
+        <div class="block watch-later" aid="18390083" title="稍后看">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-watch-later"></i>
+                <div class="t-right">
+                    <span class="t-right-top">稍后看</span>
+                    <span class="t-right-bottom">马克一下~</span>
+                </div>
+            </span>
+        </div>
+        <div class="block app" id="app_qrcode_box" title="用手机看">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-app"></i>
+                <div class="t-right">
+                    <span class="t-right-top">用手机看</span>
+                    <span class="t-right-bottom">离线看更方便</span>
+                </div>
+            </span>
+            <div class="qr-code-box report-wrap-module" id="video-report-appdownload">
+                <div class="qr-code-box-inner">
+                    <div class="qr-code" id="qr_code"></div>
+                    <div class="qr-info">
+                        <div class="qr-info-head">【STN的选题会13】 你知道大锤的冲锋有几种用法吗？</div>
+                        <div class="qr-info-description" id="qr_description"></div>
+                    </div>
+                    <div class="qr-bottom">用<a href="//app.bilibili.com/" target="_blank">哔哩哔哩客户端</a>或其他应用扫描二维码</div>
+                </div>
+            </div>
+        </div>
+        <div class="block zan">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-zan" title="点赞"></i>
+                <div class="t-right">
+                    <span class="t-right-top middle">点赞</span>
+                    <span class="t-right-bottom"></span>
+                </div>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="main-inner">
+        <div class="v_small">
+                
+    </div>
+    <div class="v_large">
+                <div class="v_info">
+            <div class="s_tag report-scroll-module report-wrap-module" id="tag_report">
+                <ul class="tag-list">
+                                    </ul>
+                <span id="newtag"></span>
+            </div>
+                        <div class="intro">
+                        <div class="v_desc report-scroll-module report-wrap-module" id="v_desc" data-desc="0">相关游戏: 大金刚 鬼泣
+简介补充: 不知道罢，我来教你</div>
+            </div>
+                    </div>
+                    <div class="v-content">
+                <div class="ad ad-e1"></div>
+                <div class="ad ad-e2"></div>
+            </div>
+                <!--评论-->
+        <div class="common report-scroll-module report-wrap-module" id="common_report">
+            <div class="b-head">
+              <span class="b-head-t results"></span>
+              <span class="b-head-t">评论</span>
+              <a class="del-log" href="//www.bilibili.com/replydeletelog?aid=18390083&title=【STN的选题会13】 你知道大锤的冲锋有几种用法吗？" target="_blank">查看删除日志</a>
+            </div>
+            <div class="comm" id="bbComment">
+                <!-- <div id="load_comment" class="comm_open_btn" onclick="var fb = new bbFeedback('.comm', 'arc');fb.show(18390083, 1);" style="cursor:pointer"></div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div itemprop="video" itemscope itemtype="//schema.org/VideoObject" style="display:none">
+        <meta itemprop="name" property="media:title" content="【STN的选题会13】 你知道大锤的冲锋有几种用法吗？" />
+        <span property="media:type" content="application/x-shockwave-flash">
+            <meta itemprop="duration" content="T22M50S" />
+            <meta itemprop="thumbnailUrl" rel="media:thumbnail" content="http://i1.hdslb.com/bfs/archive/64bf7436e7179ae053d8ad91a15e32d0972553ea.jpg" />
+            <meta itemprop="embedURL" content="//static.hdslb.com/miniloader.swf?aid=18390083&page=1" />
+            <meta itemprop="uploadDate" content="2018-01-17T02:23" />
+        </span>
+    </div>
+</div>
+
+
+</div>
+
+<div class="footer">
+	<div class="footer-wrp">
+		<div class="footer-cnt clearfix">
+			<ul class="boston-postcards">
+				<li>
+					<div class="tips">bilibili</div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/blackboard/aboutUs.html">关于我们</a></div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/blackboard/friends-links.html">友情链接</a></div>
+					<div class="cards"><a target="_blank" href="//bmall.bilibili.com/#!/">哔哩哔哩周边</a></div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/blackboard/contact.html">联系我们</a></div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/blackboard/join.html">加入我们</a></div>
+					<div class="cards"><a target="_blank" href="https://account.bilibili.com/site/ident.html">官方认证</a></div>
+				</li>
+				<li>
+					<div class="tips">传送门</div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/blackboard/help.html">帮助中心</a></div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/video/av120040/">高级弹幕</a></div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/blackboard/activity_list.html">活动专题页</a></div>
+					<div class="cards"><a target="_blank" href="//www.bilibili.com/blackboard/copyright.html">侵权申诉</a></div>
+					<div class="cards"><a target="_blank" href="https://account.bilibili.com/answer/addq">分院帽计划</a></div>
+					<div class="cards"><a target="_blank" href="//activity.bilibili.com/">活动中心</a></div>
+          <div class="cards"><a target="_blank" href="http://link.acg.tv">用户反馈论坛</a></div>
+					<div class="cards"><a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a></div>
+				</li>
+				<li>
+					<div class="block right">
+						<a target="_blank" href="//app.bilibili.com/">
+							<div class="phone">
+								<div class="pic"></div>
+								<em>手机端下载</em>
+								<div class="qrcode-box-wrp">
+									<div class="qrcode-box qrcode-app">
+										<div class="qrcode-box-arrow">
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a target="_blank" href="http://weibo.com/bilibiliweb">
+							<div class="weibo">
+								<div class="pic"></div>
+								<em>新浪微博</em>
+								<div class="qrcode-box-wrp">
+									<div class="qrcode-box qrcode-weibo">
+										<div class="qrcode-box-arrow">
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a id="weixin">
+							<div class="weixin">
+								<div class="pic"></div>
+								<em>官方微信</em>
+								<div class="qrcode-box-wrp bigvip-qrcode">
+									<div class="qrcode-box qrcode-weixin">
+										<div class="qrcode-box-arrow">
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+			<div class="partner">
+          <div class="block left" style="padding-top: 0px;">
+              <div class="partner-banner"></div>
+          </div>
+          <div class="block left" style="margin: 0px 68px 0 115px;line-height:24px;float: none;">
+            <p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span> | 网络文化经营许可证：<span>沪网文[2013]0480-056号</span> | 信息网络传播视听节目许可证：<span>0910417</span> | 互联网ICP备案：<span>沪ICP备13002172号-3</span> 沪ICP证：<span>沪B2-20100043</span> | 违法不良信息举报邮箱：help@bilibili.com | 违法不良信息举报电话：4000233233转3</p>
+            <p><a href="http://www.shjbzx.cn" target="_blank"><i class="icons-footer icons-footer-report"></i><span> 上海互联网举报中心</span></a> | <a href="http://jb.ccm.gov.cn/" target="_blank">12318 全国文化市场举报网站</a> | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002002436"><img src="//static.hdslb.com/images/base/beiantubiao.png" style="vertical-align: top;"> 沪公网安备 31011002002436号</a> | <a href="mailto:userreport@bilibili.com">儿童色情信息举报专区</a></p>
+            <p><a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank">网上有害信息举报专区：<img src="//static.hdslb.com/images/12377.png" width="16" height="16" style="vertical-align: sub;"> 中国互联网违法和不良信息举报中心</a></p>
+            <p>公司名称：上海宽娱数码科技有限公司 | 公司地址：上海市杨浦区政立路485号 | 客服电话：4000233233</p>
+          </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">loadLoginStatus();</script>
+<script type="text/javascript" src="//www.bilibili.com/online.js"></script>
+<div style="display:none;">
+    <script type="text/javascript">
+        $(function(){
+            $.ajax({ url: '//data.bilibili.com/rec.js',cache: true,dataType:'script'});
+            $('<scr'+'ipt type="text/javascript" src="//static.hdslb.com/js/bfd.js" charset="UTF-8"></scri'+'pt>').appendTo('body');
+//	$('<scr'+'ipt type="text/javascript" src="//s11.cnzz.com/stat.php?id=2724999&web_id=2724999" charset="UTF-8"></scri'+'pt>').appendTo('body');
+            $('<scr'+'ipt type="text/javascript" src="//tajs.qq.com/stats?sId=9156259" charset="UTF-8"></scri'+'pt>').appendTo('body');
+        });
+    </script>
+    <script type="text/javascript">
+        //日志上报
+        window.spmReportData = {}
+            window.reportConfig = {
+                sample : 1,
+                scrollTracker: true,
+                msgObjects : 'spmReportData'
+            }
+    </script>
+    <script>
+        var cnzz_s_tag = document.createElement('script');
+        cnzz_s_tag.type = 'text/javascript';
+        cnzz_s_tag.async = true;
+        cnzz_s_tag.charset = "utf-8";
+        cnzz_s_tag.src = "https://s11.cnzz.com/stat.php?id=2724999&web_id=2724999&async=1";
+        var root_s = document.getElementsByTagName('script')[0];
+        root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+    </script>
+    
+<script type="text/javascript" src="//static.hdslb.com/tag/js/tag.index2.0.min.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/elec_2/dist/js/elec.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/phoenix/dist/js/comment.min.js"></script>
+
+<script src="//static.hdslb.com/js/core-v5/page.count.js" type="text/javascript" language="javascript"></script>
+<script language="javascript">
+var aid='18390083', typeid='65', mid='7349', pageno = '1', totalpage = '1', wb_title = "\u3010STN\u7684\u9009\u9898\u4f1a13\u3011 \u4f60\u77e5\u9053\u5927\u9524\u7684\u51b2\u950b\u6709\u51e0\u79cd\u7528\u6cd5\u5417\uff1f", wb_desc = wb_title + ' UP主：STN工作室', wb_info="\u3010STN\u7684\u9009\u9898\u4f1a13\u3011 \u4f60\u77e5\u9053\u5927\u9524\u7684\u51b2\u950b\u6709\u51e0\u79cd\u7528\u6cd5\u5417\uff1f   UP\u4e3b\uff1aSTN\u5de5\u4f5c\u5ba4", wb_url='http://www.bilibili.com/video/av18390083/', wb_full_url='http://www.bilibili.com/video/av18390083/', wb_img='http://i2.hdslb.com/bfs/archive/64bf7436e7179ae053d8ad91a15e32d0972553ea.jpg', wb_summary = "\u76f8\u5173\u6e38\u620f: \u5927\u91d1\u521a \u9b3c\u6ce3 \u7b80\u4ecb\u8865\u5145: \u4e0d\u77e5\u9053\u7f62\uff0c\u6211\u6765\u6559\u4f60";
+    
+var spid=0, isSpFav="0", isSpAtt="0";
+
+$(function(){
+    loadHTML5(18390083,1);
+
+    
+    
+    
+    VideoPart.collapse(pageno);
+    lrurl();
+
+        checkLiveState(mid);
+    });
+
+var bbFlag = false
+window.onLoginInfoLoaded(function(loginInfo){
+  if(bbFlag) {
+    return
+  }
+  var m, replyID = ''
+  var info = loginInfo
+  // info.mid = window.uid
+
+  if (m = window.location.href.match(/#fb,([0-9]+),([0-9]+),([0-9]+),(.+)$/)) {
+    replyID = m[3];
+  } else if (m = window.location.href.match(/#reply([0-9]+)$/)) {
+    replyID = m[1];
+  }
+  //初始化评论模块
+  new bbComment('#bbComment', '18390083', 1, info, replyID);
+  bbFlag = true
+}, true)
+
+</script>
+
+<script type="text/javascript" src="//static.hdslb.com/mstation/article_chart/chart.min.js"></script>
+<!-- add by liqian -->
+<!-- 视频详情页增加一个投诉入口,番剧详情页无需增加这个入口 -->
+<script type="text/javascript" src="//static.hdslb.com/mstation/js/upload/moxie.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/mstation/js/upload/plupload.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/core-v5/appeal.js"></script>
+
+<!-- end -->
+
+
+</div>
+</body>
+</html>
