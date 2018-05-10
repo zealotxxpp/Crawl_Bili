@@ -170,7 +170,7 @@ def uper_videos_save_many(uper_list):
         print('too fast too fast')
         loop.close()
         time.sleep(60)
-        uper_videos_save_many(uid)
+        uper_videos_save_many(uper_list)
         return
     print('\r\n')
     uperandjstext_list = zip(jstext_lists, uper_list)
