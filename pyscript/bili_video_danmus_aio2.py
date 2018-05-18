@@ -54,7 +54,7 @@ async def danmu_xml_get(url):
     async with aiohttp.ClientSession() as session:
         try:
             async with session.get(url=url) as resp:
-                text = await resp.text()
+                text = await resp.text(errors = "ignore")
 
                 if resp.status != 200:
                     raise NameError
