@@ -74,7 +74,7 @@ async def uper_relationstat_get(uid):
 async def uper_spaceupstat_get(uid):
 
     url = 'https://api.bilibili.com/x/space/upstat?mid=%d&jsonp=jsonp' % uid
-    headers = {'Referer': 'https://space.bilibili.com/%d'% uid}
+    headers = { 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'}
     #postload = {'mid': '%d' % uid, 'csrf': 'null'}
 
     async with aiohttp.ClientSession() as session:
@@ -351,7 +351,7 @@ def uper_status_insert(uper_status_list):
         connection.close()
 
 def uper_status_update_many(uper_list):
-    time1 = time.time()
+#    time1 = time.time()
     global uper_status_list
     uper_status_list = []
     for i in uper_list:
@@ -361,7 +361,7 @@ def uper_status_update_many(uper_list):
     uper_status_insert(uper_status_list)
     print('%d upers status been updated' % len(uper_status_list))
     print('\r\n')
-    time2 = time.time()
+#    time2 = time.time()
     uper_status_list = []
 
 uper_status_list = []
