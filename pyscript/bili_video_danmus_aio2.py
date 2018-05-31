@@ -64,6 +64,9 @@ async def danmu_xml_get(url):
         except aiohttp.client_exceptions.ClientError:
             raise NameError
 
+        except asyncio.TimeoutError:
+            return
+
 async def rolldate_get(cid):
 
     url = 'https://comment.bilibili.com/rolldate,%s' % cid
@@ -87,6 +90,9 @@ async def video_danmus_coll(uid, aid, cid, source_timestamp, danmu_xml_url):
 
     text = await danmu_xml_get(danmu_xml_url)
 
+    if text == None:
+        return
+        
     soup = BS(text, 'lxml')
     all_d = soup.select('d')
     now_str = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
