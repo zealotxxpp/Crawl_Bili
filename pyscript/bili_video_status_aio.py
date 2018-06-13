@@ -316,7 +316,7 @@ def video_status_update(uid):
             InsertNum1 = InsertNum1 + len(video_status_list)
         except Exception as e:
             print(e)
-            return Error
+            return  NameError
 
         if len(video_pages_list) == 0:
             continue
