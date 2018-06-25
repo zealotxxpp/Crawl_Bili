@@ -15,6 +15,12 @@ config = {
           'charset':'utf8mb4'
           }
 
+video_danmus_list = []
+newdanmuxml_list = []
+timestamps_done_list = []
+cidrowID_DF = None
+cookies = {}
+
 def CT_video_danmus():
 
     global config
@@ -50,8 +56,8 @@ def CT_video_timestamps_done():
         connection.close()
 
 async def danmu_xml_get(url):
-
-    async with aiohttp.ClientSession() as session:
+    global cookies
+    async with aiohttp.ClientSession(cookies=cookies) as session:
         try:
             async with session.get(url=url) as resp:
                 text = await resp.text(errors = "ignore")
@@ -67,21 +73,74 @@ async def danmu_xml_get(url):
         except asyncio.TimeoutError:
             return
 
-async def rolldate_get(cid):
+def get_cidtimestamp_DF(uid):
+    global config
 
-    url = 'https://comment.bilibili.com/rolldate,%s' % cid
-    async with aiohttp.ClientSession() as session:
-        try:
-            async with session.get(url=url) as resp:
-                text = await resp.text()
+    connection = pymysql.connect(**config)
 
-                if resp.status != 200:
-                    raise NameError
+    cur = connection.cursor(pymysql.cursors.DictCursor)
 
-                return text
+    sql = "SELECT cid, source_timestamp FROM video_timestamps_done WHERE uid = %s GROUP BY cid, source_timestamp"
+    cur.execute(sql % uid)
 
-        except aiohttp.client_exceptions.ClientError:
-            raise NameError
+    data = cur.fetchall()
+    cur.close()
+    connection.close()
+
+    if len(data) == 0:
+        DF = DataFrame()
+        print('uid:%s has no cidtimestamp in Database video_timestamps_done' % uid)
+        return DF
+
+    DF = DataFrame(data)
+    print('uid:%s has %s cidtimestamp in Database video_timestamps_done' % (uid,len(DF)))
+    return DF
+
+def get_cidtodotimestamp_DF(uid):
+    global config
+
+    connection = pymysql.connect(**config)
+
+    cur = connection.cursor(pymysql.cursors.DictCursor)
+
+    sql = "SELECT cid, todo_timestamp FROM video_timestamps_todo WHERE uid = %s GROUP BY cid, todo_timestamp"
+    cur.execute(sql % uid)
+
+    data = cur.fetchall()
+    cur.close()
+    connection.close()
+
+    if len(data) == 0:
+        DF = DataFrame()
+        print('uid:%s has no cidtimestamp in Database video_timestamps_todo' % uid)
+        return DF
+
+    DF = DataFrame(data)
+    print('uid:%s has %s cidtimestamp in Database video_timestamps_todo' % (uid,len(DF)))
+    return DF
+
+def get_cidrowID_DF(uid):
+    global config
+
+    connection = pymysql.connect(**config)
+
+    cur = connection.cursor(pymysql.cursors.DictCursor)
+
+    sql = "SELECT cid, rowID FROM video_danmus WHERE uid = %s"
+    cur.execute(sql % uid)
+
+    data = cur.fetchall()
+    cur.close()
+    connection.close()
+
+    if len(data) == 0:
+        DF = DataFrame()
+        print('uid:%s has no cidrowID in Database' % uid)
+        return DF
+
+    DF = DataFrame(data)
+    print('uid:%s has %s cidrowID in Database' % (uid,len(DF)))
+    return DF
 
 async def video_danmus_coll(uid, aid, cid, source_timestamp, danmu_xml_url):
     global video_danmus_list
@@ -136,52 +195,6 @@ async def video_danmus_coll(uid, aid, cid, source_timestamp, danmu_xml_url):
     timestamps_done_list.append(temp2)
     print('uid:%s aid:%s source_timestamp:%s url:%s been registered' % (uid, aid, source_timestamp, danmu_xml_url))
 
-def get_cidrowID_DF(uid):
-    global config
-
-    connection = pymysql.connect(**config)
-
-    cur = connection.cursor(pymysql.cursors.DictCursor)
-
-    sql = "SELECT cid, rowID FROM video_danmus WHERE uid = %s"
-    cur.execute(sql % uid)
-
-    data = cur.fetchall()
-    cur.close()
-    connection.close()
-
-    if len(data) == 0:
-        DF = DataFrame()
-        print('uid:%s has no cidrowID in Database' % uid)
-        return DF
-
-    DF = DataFrame(data)
-    print('uid:%s has %s cidrowID in Database' % (uid,len(DF)))
-    return DF
-
-def get_cidtimestamp_DF(uid):
-    global config
-
-    connection = pymysql.connect(**config)
-
-    cur = connection.cursor(pymysql.cursors.DictCursor)
-
-    sql = "SELECT cid, source_timestamp FROM video_timestamps_done WHERE uid = %s GROUP BY cid, source_timestamp"
-    cur.execute(sql % uid)
-
-    data = cur.fetchall()
-    cur.close()
-    connection.close()
-
-    if len(data) == 0:
-        DF = DataFrame()
-        print('uid:%s has no cidtimestamp in Database' % uid)
-        return DF
-
-    DF = DataFrame(data)
-    print('uid:%s has %s cidtimestamp in Database' % (uid,len(DF)))
-    return DF
-
 def video_danmus_insert(video_danmus_list, timestamps_done_list):
 
     global config
@@ -226,7 +239,7 @@ def get_cid_list(uid):
 
     cur = connection.cursor(pymysql.cursors.DictCursor)
 
-    sql = "SELECT aid, cid FROM video_pages WHERE uid = %d"
+    sql = "SELECT aid, cid FROM video_pages WHERE uid = %d order by cid_x desc"
     cur.execute(sql % uid)
 
     data = cur.fetchall()
@@ -242,91 +255,52 @@ def get_cid_list(uid):
     print('uid: %s has %s cids in Database' % (uid, len(cidlist)))
     return cidlist
 
-async def rolldate_coll(uid, aid, cid):
-    global newdanmuxml_list_temp
-    global cidtimestamp_DF
-
-    try:
-        timestamps = cidtimestamp_DF.source_timestamp[cidtimestamp_DF.cid == str(cid)].unique()
-    except AttributeError:
-        timestamps = []
-
-    text = await rolldate_get(cid)
-
-    if text == '':
-        print('cid:%s has no rolldate' % cid)
-        return
-    data = eval(text)
-    DF = DataFrame(data)
-    collnum = 0
-    for i in range(len(DF)):
-        source_timestamp = DF.iloc[i].values[1]
-        if str(source_timestamp) in timestamps:
-            continue
-        danmu_xml_url = 'https://comment.bilibili.com/dmroll,%s,%s' % (source_timestamp, cid)
-
-        temp = [uid, aid, cid, source_timestamp, danmu_xml_url]
-        newdanmuxml_list_temp.append(temp)
-        collnum = collnum + 1
-
-    print('uid: %s aid: %s cid: %s has %s rolldate, been collected' % (uid, aid, cid, collnum))
-
 def create_newdanmuxml_list(uid):
 
     global newdanmuxml_list
-    global newdanmuxml_list_temp
-
-    newdanmuxml_list = []
-
+    global config
+    
     cidlist = get_cid_list(uid)
-
+        
     for [aid, cid] in cidlist:
         source_timestamp = 'current'
         danmu_xml_url = 'http://comment.bilibili.com/%s.xml' % (cid)
         temp = [uid, aid, cid, source_timestamp, danmu_xml_url]
         newdanmuxml_list.append(temp)
-
     print('uid: %s has %s current danmuxml_url' % (uid, len(newdanmuxml_list)))
+    
+    cidtodotimestamp_DF = get_cidtodotimestamp_DF(uid)
+    ciddonetimestamp_DF = get_cidtimestamp_DF(uid)
+    
+    for [aid, cid] in cidlist:
+        collnum = 0
+        url_temp = []
+        timestamps_todo = cidtodotimestamp_DF.todo_timestamp[cidtodotimestamp_DF.cid == str(cid)].unique()
+        timestamps_done = ciddonetimestamp_DF.source_timestamp[ciddonetimestamp_DF.cid == str(cid)].unique()
+        for stamp in timestamps_todo:
+            if stamp in timestamps_done:
+                continue
+            date = datetime.datetime.strftime(datetime.datetime.fromtimestamp(int(stamp)), '%Y-%m-%d')
+            danmu_xml_url = 'https://api.bilibili.com/x/v2/dm/history?type=1&oid=%s&date=%s' % (cid, date)
+            temp = [uid, aid, cid, stamp, danmu_xml_url]
+            url_temp.append(temp)
+            collnum = collnum + 1
+        print('uid: %s aid: %s cid: %s has %s new rolldates to be collected' % (uid, aid, cid, collnum))
+        newdanmuxml_list.extend(url_temp)
 
 
-    cidlist_num = len(cidlist)
-    roundnum = (cidlist_num // 10) + 1
-
-    st = 0
-
-    while st < roundnum:
-        start = st * 10
-        end = start + 10
-        newdanmuxml_list_temp = []
-
-        asyncio.set_event_loop(asyncio.new_event_loop())
-        loop = asyncio.get_event_loop()
-        tasks = asyncio.gather(*[rolldate_coll(uid, aid, cid) for [aid, cid] in cidlist[start:end]])
-        st = st + 1
-        try:
-            loop.run_until_complete(tasks)
-        except NameError:
-            print('too fast too fast')
-            loop.close()
-            time.sleep(60)
-            st = st - 1
-            continue
-
-        newdanmuxml_list.extend(newdanmuxml_list_temp)
-        loop.close()
-
-def video_danmus_save(uid):
+def video_danmus_save(uid, newcookies):
     global newdanmuxml_list
-    global newdanmuxml_list_temp
     global video_danmus_list
     global timestamps_done_list
     global cidrowID_DF
-    global cidtimestamp_DF
+    global cookies
+
+    cookies = newcookies
 
     newdanmuxml_list = []
-    cidtimestamp_DF = get_cidtimestamp_DF(uid)
     create_newdanmuxml_list(uid)
-
+    
     print('uid: %s has %s newdanmuxml to be saved'% (uid, len(newdanmuxml_list)))
     print('\r\n')
 
@@ -392,20 +366,24 @@ def video_danmus_save(uid):
         print('\r\n')
 
 
-video_danmus_list = []
-newdanmuxml_list = []
-newdanmuxml_list_temp = []
-timestamps_done_list = []
-cidrowID_DF = None
-cidtimestamp_DF = None
 
-uid_list = [7349]
+
 
 if __name__ == '__main__':
+    
+    uid_list = [7349]
+    
+    newcookies = {}
+    cookie_raw = input('cookies?')
+    for line in cookie_raw.split(';'):   #按照字符：进行划分读取
+        #其设置为1就会把字符串拆分成2份
+        name,value=line.strip().split('=',1)
+        newcookies[name]=value  #为字典newcookies添加内容
+    
     time1 = time.time()
-
+    
     for uid in uid_list:
-        video_danmus_save(uid)
+        video_danmus_save(uid, newcookies)
 
 
     time2 = time.time()
