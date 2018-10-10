@@ -272,7 +272,7 @@ def update_todotimestamplist(uid, newcookies):
             
         loop.close()
         video_timestampstodo_insert(todo_timestamp_list)
-        time.sleep(60)
+        time.sleep(120)
 
 
 

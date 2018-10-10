@@ -21,8 +21,8 @@ uper_videos_save_many(update_list)
 for uper in update_list:
     video_status_update(uper)
 
-for uper in update_list:
-    update_todotimestamplist(uper, cookies)
+#for uper in update_list:
+#    update_todotimestamplist(uper, cookies)
 
 for uper in update_list:
     video_danmus_save(uper, cookies)

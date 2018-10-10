@@ -113,6 +113,16 @@ async def video_status_coll(aid, mid, newvideolist):
     jstext_stat = js.loads(text_stat,encoding='utf8')
     data_stat = jstext_stat['data']
 
+    if jstext_stat['code'] != 0:
+        erro = jstext_stat['message']
+        print("aid: " + aid + "collect video info erro: " + erro)
+        record_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        temp = [mid,aid,erro,None,None,None,None,None,None,None,None,None,None,None,None,
+            None,None,record_time]
+        video_status_list.append(temp)
+        print('video aid:%s mid:%s been collected' % (aid ,mid))
+        return
+
     text_elec = await video_elec_get(aid, mid)
     jstext_elec = js.loads(text_elec,encoding='utf8')
     data_elec = jstext_elec['data']
